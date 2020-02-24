@@ -1,7 +1,7 @@
 import axios from "axios";
 const CatagoriesAction = () => {
   return async dispatch => {
-    const response = await axios.get("http://temp.dash.zeta.in/food.php");
+    const response = await axios.get("https://temp.dash.zeta.in/food.php");
     const responseResult = response.data;
 
     dispatch({
