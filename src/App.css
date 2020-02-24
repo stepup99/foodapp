@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+.App .favouriteTop {
+  margin: 10px auto;
+}
+
+.App .makeScroll {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.App .makeScroll .boxCard {
+  min-width: 240px;
+}
+
+.makeScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.categories {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.categories .subcategories {
+  min-width: 240px;
+  border: 1px solid #000;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* .categories::-webkit-scrollbar {
+  display: none;
+} */
+
+.App .itemList .subItemList {
+  padding: 0px;
+}
+
+.App .subcategoriesImg img {
+  width: 100%;
+}
