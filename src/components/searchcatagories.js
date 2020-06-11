@@ -1,17 +1,13 @@
 import React, { Fragment } from "react";
-import uuid from "uuid/v4";
 function Searchcatagories(props) {
   const myQuery = props.searchQuery.toLowerCase();
   const search = props.reduxdata.catogories.recipes;
 
   const mySearch = search.map(item => {
-    // console.log("inside map");
     if (typeof myQuery == "string") {
-      //   console.log("indie strin");
       if (item.name.toLowerCase().includes(myQuery)) {
-        // return <div>{item.name}</div>;
         return (
-          <div className="col s12 subItemList" key={uuid()}>
+          <div className="col s12 subItemList" key={item.item_id}>
             <div className="col s12">
               <div className="card">
                 <div className="card-image waves-effect waves-block waves-light">

@@ -1,11 +1,4 @@
-import React, {
-  useState,
-  useEffect,
-  Fragment,
-  memo,
-  createRef,
-  Ref
-} from "react";
+import React, { useState, useEffect, Fragment, memo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CatagoriesAction from "../actions/catagoriesAction";
 import Subcategories from "./subcategories";
