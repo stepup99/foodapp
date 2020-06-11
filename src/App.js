@@ -9,7 +9,7 @@ function App() {
     //     <Navbar />
     //   </div>
     // </BrowserRouter>
-    <div>hye</div>
+    <div>hye there</div>
   );
 }
 
