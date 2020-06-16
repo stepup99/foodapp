@@ -23,9 +23,17 @@ const addWish = () => {
     }
 }
 
+const addChange = (name) => {
+    return {
+        type: "ADD_CHANGE",
+        payload: name
+    }
+}
+
 const actionFunc = {
     anotherName,
-    addWish
+    addWish,
+    addChange
 }
 
 export default actionFunc;

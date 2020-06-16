@@ -1,16 +1,36 @@
 // const iState = {
 //     name: "ramesh",
-//     wishes: ['eat', 'code']
+//     // wishes: ['eat', 'code']
+//     myinput: ""
+
 // }
 
-const nameReducer = (state = '', action) => {
+
+
+export const nameReducer = (state = 'suker', action) => {
     // console.log(action)
     const { type, payload } = action;
     if (type === 'CHANGE_NAME') {
         return payload;
     }
+
+
+
     return state
 }
 
 
-export default nameReducer;
+export const inputReducer = (state = 'myname', action) => {
+    const { type, payload } = action;
+    // if (type === 'CHANGE_NAME') {
+    //     return payload;
+    // }
+    if (type === 'ADD_CHANGE') {
+        return payload;
+    }
+
+
+    return state
+}
+
+
